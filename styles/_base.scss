@@ -1,0 +1,114 @@
+@use 'globals' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: url('../images/bg-intro-mobile.png') $red-400;
+    font-family: "Poppins", sans-serif;
+    @include flex-center;
+}
+
+main {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5.5rem $spacing-300;
+    gap: $spacing-800;
+}
+
+.header {
+    h1 {
+        @include heading;
+        & {
+            color: $white;
+            margin-bottom: $spacing-200;
+        }
+    }
+
+    p {
+        @include text;
+        color: $white;
+    }
+}
+
+.form {
+    &__offer {
+        background-color: $purple-700;
+        color: $white;
+        border-radius: 0.625rem;
+        @include flex-center;
+        box-shadow: 0 0.5rem 0 rgb(0, 0, 0, 0.15);
+        margin-bottom: $spacing-300;
+
+        p {
+            width: 60%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            @include form-text(400, 0.25px);
+        }
+
+        span {
+            @include form-text(700, 0.25px);
+        }
+    }
+
+    &__info-form {
+        background-color: $white;
+        border-radius: 0.625rem;
+        padding: $spacing-300;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-100;
+        box-shadow: 0 0.5rem 0 rgb(0, 0, 0, 0.15);
+    
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-200;
+
+            input {
+                padding: $spacing-200 $spacing-300;
+                border-radius: 0.313rem;
+                border: 1px solid $gray-200;
+
+                &::placeholder {
+                    @include form-text(400, 0.25px);
+                    color: $gray-900;
+                    opacity: 0.75;
+                }
+            }
+        }
+
+        p {
+            @include terms-conditions(500);
+            color: $purple-350;
+        }
+
+        a {
+            @include terms-conditions(700);
+            color: $red-400;
+            text-decoration: none;
+        }
+    }
+
+    &__btn {
+        background-color: $green-400;
+        border: none;
+        border-radius: 0.313rem;
+        padding-top: $spacing-200;
+        padding-bottom: $spacing-200;
+        box-shadow: inset 0 -0.5rem 0 rgb(0, 0, 0, 0.15);
+
+        p {
+            @include form-text(600, 2px);
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}

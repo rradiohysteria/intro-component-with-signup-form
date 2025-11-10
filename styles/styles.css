@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: url("../images/bg-intro-mobile.png") #ff7979;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 5.5rem 1.5rem;
+  gap: 4rem;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+@media screen and (min-width: 48rem) {
+  .header h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+}
+.header h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.header p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.65;
+  letter-spacing: 0rem;
+  color: #fff;
+}
+
+.form__offer {
+  background-color: #5354a4;
+  color: #fff;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+}
+.form__offer p {
+  width: 60%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.75;
+  letter-spacing: 0.25px;
+}
+.form__offer span {
+  font-weight: 700;
+  font-size: 0.938rem;
+  line-height: 1.75;
+  letter-spacing: 0.25px;
+}
+.form__info-form {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+}
+.form__info-form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form__info-form div input {
+  padding: 1rem 1.5rem;
+  border-radius: 0.313rem;
+  border: 1px solid #dedede;
+}
+.form__info-form div input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.75;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  opacity: 0.75;
+}
+.form__info-form div input::placeholder {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.75;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  opacity: 0.75;
+}
+.form__info-form p {
+  font-weight: 500;
+  font-size: 0.688rem;
+  line-height: 1.9;
+  letter-spacing: 0px;
+  color: #bab7d4;
+}
+.form__info-form a {
+  font-weight: 700;
+  font-size: 0.688rem;
+  line-height: 1.9;
+  letter-spacing: 0px;
+  color: #ff7979;
+  text-decoration: none;
+}
+.form__btn {
+  background-color: #38cc8b;
+  border: none;
+  border-radius: 0.313rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0 -0.5rem 0 rgba(0, 0, 0, 0.15);
+}
+.form__btn p {
+  font-weight: 600;
+  font-size: 0.938rem;
+  line-height: 1.75;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */
