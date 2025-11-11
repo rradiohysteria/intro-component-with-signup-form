@@ -16,19 +16,19 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./preview.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/rradiohysteria/intro-component-with-signup-form)
+- Live Site URL: [GitHub Pages](https://rradiohysteria.github.io/intro-component-with-signup-form/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+- SASS
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow

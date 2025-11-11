@@ -90,6 +90,7 @@ main {
 }
 .form__info-form__fields .input-field {
   text-align: end;
+  position: relative;
 }
 .form__info-form__fields .input-field input {
   width: 100%;
@@ -119,7 +120,11 @@ main {
   opacity: 0.75;
   font-family: "Poppins", sans-serif;
 }
-.form__info-form p {
+.form__info-form__fields .input-field input:user-invalid {
+  border: 2px solid #ff7979;
+  outline: none;
+}
+.form__info-form .terms-services {
   font-weight: 500;
   font-size: 0.688rem;
   line-height: 1.9;
@@ -149,6 +154,21 @@ main {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.error-msg {
+  color: #ff7979;
+  font-size: 0.688rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.55;
+  letter-spacing: 0rem;
+}
+
+.error-icon {
+  position: absolute;
+  right: 2rem;
+  top: 0.75rem;
 }
 
 .hidden {
@@ -190,7 +210,7 @@ main {
   .form__offer {
     text-align: center;
   }
-  .form__info-form p {
+  .form__info-form .terms-services {
     text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */

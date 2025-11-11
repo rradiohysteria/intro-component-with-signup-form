@@ -26,18 +26,22 @@
         <div class="form__info-form__fields">
           <div class="input-field">
             <input type="text" id="firstname" class="form__input" placeholder="First Name" aria-label="First Name" required>
+            <img id="firstname__err-icon" class='error-icon hidden' src="./images/icon-error.svg" alt="error icon">
             <p id="firstname__err-msg" class="error-msg hidden">First Name cannot be empty</p>
           </div>
           <div class="input-field">
             <input type="text" id="lastname" class="form__input" placeholder="Last Name" aria-label="Last Name" required>
+            <img id="lastname__err-icon" class='error-icon hidden' src="./images/icon-error.svg" alt="error icon">
             <p id="lastname__err-msg" class="error-msg hidden">Last Name cannot be empty</p>
           </div>
           <div class="input-field">
             <input type="email" id="useremail" class="form__input" placeholder="Email Address" aria-label="Email Address" required>
+            <img id="useremail__err-icon" class='error-icon hidden' src="./images/icon-error.svg" alt="error icon">
             <p id="useremail__err-msg" class="error-msg hidden">Looks like this is not an email</p>
           </div>
           <div class="input-field">
             <input type="password" id="userpassword" class="form__input" placeholder="Password" aria-label="Password" required>
+            <img id="userpassword__err-icon" class='error-icon hidden' src="./images/icon-error.svg" alt="error icon">
             <p id="userpassword__err-msg" class="error-msg hidden">Password cannot be empty</p>
           </div>
         </div>
@@ -45,7 +49,7 @@
           <button type="submit" class="form__btn">
             <p>Claim your free trial</p>
           </button>
-          <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+          <p class="terms-services">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
         </div>
       </form>
     </section>
