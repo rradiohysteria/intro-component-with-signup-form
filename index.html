@@ -22,12 +22,24 @@
       <div class="form__offer">
         <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
-      <form class="form__info-form">
+      <form id='info-form' class="form__info-form" novalidate>
         <div class="form__info-form__fields">
-          <input type="text" id="firstname" class="form__input" placeholder="First Name" aria-label="First Name" required>
-          <input type="text" id="lastname" class="form__input" placeholder="Last Name" aria-label="Last Name" required>
-          <input type="email" id="useremail" class="form__input" placeholder="Email Address" aria-label="Email Address" required>
-          <input type="password" id="userpassword" class="form__input" placeholder="Password" aria-label="Password" required>
+          <div class="input-field">
+            <input type="text" id="firstname" class="form__input" placeholder="First Name" aria-label="First Name" required>
+            <p id="firstname__err-msg" class="error-msg hidden">First Name cannot be empty</p>
+          </div>
+          <div class="input-field">
+            <input type="text" id="lastname" class="form__input" placeholder="Last Name" aria-label="Last Name" required>
+            <p id="lastname__err-msg" class="error-msg hidden">Last Name cannot be empty</p>
+          </div>
+          <div class="input-field">
+            <input type="email" id="useremail" class="form__input" placeholder="Email Address" aria-label="Email Address" required>
+            <p id="useremail__err-msg" class="error-msg hidden">Looks like this is not an email</p>
+          </div>
+          <div class="input-field">
+            <input type="password" id="userpassword" class="form__input" placeholder="Password" aria-label="Password" required>
+            <p id="userpassword__err-msg" class="error-msg hidden">Password cannot be empty</p>
+          </div>
         </div>
         <div>
           <button type="submit" class="form__btn">

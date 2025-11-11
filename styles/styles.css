@@ -88,26 +88,36 @@ main {
   flex-direction: column;
   gap: 1rem;
 }
-.form__info-form__fields input {
+.form__info-form__fields .input-field {
+  text-align: end;
+}
+.form__info-form__fields .input-field input {
+  width: 100%;
   padding: 1rem 1.5rem;
   border-radius: 0.313rem;
   border: 1px solid #dedede;
 }
-.form__info-form__fields input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 0.938rem;
-  line-height: 1.75;
-  letter-spacing: 0.25px;
-  color: #3d3b48;
-  opacity: 0.75;
+.form__info-form__fields .input-field input:focus {
+  border: 1px solid #5354a4;
+  outline: none;
 }
-.form__info-form__fields input::placeholder {
+.form__info-form__fields .input-field input::-moz-placeholder {
   font-weight: 400;
   font-size: 0.938rem;
   line-height: 1.75;
   letter-spacing: 0.25px;
   color: #3d3b48;
   opacity: 0.75;
+  font-family: "Poppins", sans-serif;
+}
+.form__info-form__fields .input-field input::placeholder {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.75;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  opacity: 0.75;
+  font-family: "Poppins", sans-serif;
 }
 .form__info-form p {
   font-weight: 500;
@@ -139,6 +149,10 @@ main {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 48rem) {

@@ -72,17 +72,29 @@ main {
             flex-direction: column;
             gap: $spacing-200;
 
-            input {
-                padding: $spacing-200 $spacing-300;
-                border-radius: 0.313rem;
-                border: 1px solid $gray-200;
+            .input-field {
+                text-align: end;
 
-                &::placeholder {
-                    @include form-text(400, 0.25px);
-                    color: $gray-900;
-                    opacity: 0.75;
+                input {
+                    width: 100%;
+                    padding: $spacing-200 $spacing-300;
+                    border-radius: 0.313rem;
+                    border: 1px solid $gray-200;
+    
+                    &:focus {
+                        border: 1px solid $purple-700;
+                        outline: none;
+                    }
+    
+                    &::placeholder {
+                        @include form-text(400, 0.25px);
+                        color: $gray-900;
+                        opacity: 0.75;
+                        font-family: "Poppins", sans-serif;
+                    }
                 }
             }
+
         }
 
         p {
@@ -111,4 +123,8 @@ main {
             color: $white;
         }
     }
+}
+
+.hidden {
+    display: none;
 }
