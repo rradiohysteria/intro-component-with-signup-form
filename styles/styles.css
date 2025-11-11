@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  background: url("../images/bg-intro-mobile.png") #ff7979;
+  background: url("../images/bg-intro-mobile.png") #ff7979 center;
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
@@ -79,21 +79,21 @@ main {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.15);
 }
-.form__info-form div {
+.form__info-form__fields {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.form__info-form div input {
+.form__info-form__fields input {
   padding: 1rem 1.5rem;
   border-radius: 0.313rem;
   border: 1px solid #dedede;
 }
-.form__info-form div input::-moz-placeholder {
+.form__info-form__fields input::-moz-placeholder {
   font-weight: 400;
   font-size: 0.938rem;
   line-height: 1.75;
@@ -101,7 +101,7 @@ main {
   color: #3d3b48;
   opacity: 0.75;
 }
-.form__info-form div input::placeholder {
+.form__info-form__fields input::placeholder {
   font-weight: 400;
   font-size: 0.938rem;
   line-height: 1.75;
@@ -128,8 +128,8 @@ main {
   background-color: #38cc8b;
   border: none;
   border-radius: 0.313rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
   box-shadow: inset 0 -0.5rem 0 rgba(0, 0, 0, 0.15);
 }
 .form__btn p {
@@ -139,4 +139,44 @@ main {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    width: 65%;
+    margin: 5.5rem auto;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__offer p {
+    width: 100%;
+  }
+  .form__info-form {
+    padding: 2rem 2.5rem;
+    gap: 1.5rem;
+  }
+  .form__info-form__fields {
+    gap: 1.5rem;
+  }
+  .form__btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 64rem) {
+  body {
+    background: url("../images/bg-intro-desktop.png") #ff7979 no-repeat center/cover;
+  }
+  main {
+    flex-direction: row;
+    text-align: start;
+    gap: 3rem;
+    width: 80%;
+  }
+  .form__offer {
+    text-align: center;
+  }
+  .form__info-form p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
